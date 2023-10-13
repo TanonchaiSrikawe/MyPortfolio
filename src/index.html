@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Taiwind CSS File -->
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+    <title>MyPortfolio Website</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+    </style>
+</head>
+<body>
+<div class="grid grid-cols-[1fr_3.5fr] bg-black md:block">
+    <!-- Aside Profile -->
+    <header onclick="openNavmobile()" class="bg-black relative h-full md:hidden md:z-50 lg:px-[30px] md:px-4 bg-blur-black md:before-[content:''] md:before:absolute md:before:w-[100vw] md:before:bg-[rgba(0,0,0,0.5)] md:before:h-[100%] navbar-mobile">
+        <div class="sticky top-0">
+            <div class="flex justify-center items-center flex-col  py-[30px] text-white">
+                <img src="../img/Myself.png" class="rounded-[50%] w-[170px] h-[170px] border border-8 border-white]">
+                <h2 class="text-3xl my-[5px] font-bold lg:text-lg xl:text-2xl">Tanonchai Srikawe</h2>
+                <div class="flex gap-x-[20px]">
+                    <a href="https://web.facebook.com/forexforyourlife/" target="_blank" class="hover:text-[#1877F2]"><i class="fa-brands fa-facebook icon-social"></i></a>
+                    <a href="https://line.me/ti/p/m3XY5cMe2J?fbclid=IwAR2JR9YIpOn0HGaONENy7X9iojbWS7LBpUC4WTvvxBRf6-OZ8PGt2reBrhQ" target="_blank" class="hover:text-[#06C755]"><i class="fa-brands fa-line icon-social"></i></a>
+                    <a href="https://github.com/TanonchaiSrikawe?tab=repositories" target="_blank" class="hover:text-black"><i class="fa-brands fa-github icon-social"></i></a>
+                </div>
+            </div>
+            <nav class="text-white">
+                <ul class="flex flex-col gap-[25px] ps-[20px]">
+                    <li><a href="#home" class="icon"><i class="fa-solid fa-house me-[10px] text-2xl"></i>Home</a></li>
+                    <li><a href="#about" class="icon"><i class="fa-solid fa-user me-[10px] text-2xl"></i>About</a></li>
+                    <li><a href="#projects" class="icon"><i class="fa-solid fa-diagram-project me-[10px] text-2xl"></i>Projects</a></li>
+                    <li><a href="#contact" class="icon"><i class="fa-solid fa-address-card me-[10px] text-2xl"></i>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Profile -->
+    <main>
+        <!-- mobile-navbar -->
+        <a class="fixed z-50 right-[10%] top-[7%]  hidden md:block md:rounded-[100%] md:bg-[#4E4FEB] md:px-2 md:py-1 flex justify-center items-center" onclick="openNavmobile()"><i class="fa-solid fa-bars icon-nav"></i></a>
+        <!-- First page -->
+        <section class="relative blur-img" id="home">
+            <div class="bg-[url('https://cdn.pixabay.com/photo/2017/06/29/01/02/home-office-2452806_1280.jpg')] bg-center bg-no-repeat h-screen w-full relative md:static">
+                <div class="absolute z-20 top-[35%] left-[15%]  md:left-[20px]">
+                    <h3 class="text-4xl sm:text-3xl sm-more:text-2xl">Front End Developer</h3>
+                    <h2 class="text-6xl my-[7px] sd:text-4xl sm-more:text-3xl lg:text-5xl">Hi, I am <span class="text-[#4E4FEB]">Tee</span></h2>
+                    <h2 class="text-6xl sm:text-4xl sm-more:text-3xl lg:text-5xl">Tanonchai Srikawe</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about">
+        <div class="container">
+            <div class="grid grid-cols-[1fr_1.5fr] gap-[10px] bg-black px-[10px] md:grid-cols-[1fr]">
+                <div class="w-full md:flex md:justify-center">
+                    <img class="w-[90%] h-[500px] object-cover rounded-[7%] sm:w-[100%]  md:w-[60%] md:rounded-[20px] md:h-[370px] md:object-cover lg:h-[400px]" src="../img/Myself.png">
+                </div>
+                <div>
+                    <h1 class="text-[2.75rem]"><span style="color:#4E4FEB;">About</span> Me</h1>
+                    <p class="mb-[10px] lg:text-[14px]">
+                    Hello, my name is Tanonchai Srikawe. My nickname is Tee and i graduated with a bachelor's degree in Industrial Engineering from Khon Kaen University. 
+                    My strengths is hardworking and love to learning new things and my weaknesses is think or do repeatedly but it makes me more careful.
+                    I am interested in Front End Developer because i open my mind to learn new things and i have fun and like when i am coding for clone a website. 
+                    </p>
+                    <div class="mb-[10px] flex gap-[70px]">
+                        <button  onclick='showSkill()' class="skills btn-about border-b-4 border-[#4E4FEB]">Skills</button>
+                        <button  onclick='showDescription()' class="description btn-about">Education</button>
+                    </div>
+                    <div class="show-description">
+                        <div id="show-skills" class="block">
+                            <p>- HTML & CSS</p>
+                            <p>- Tailwind CSS</p>
+                            <p>- Bootstrap5</p>
+                            <p>- JavaScript</p>
+                            <p>- ReactJS</p>
+                            <p>- Basic Node.js (Express.js)</p>
+                            <p>- Basic MongoDB</p>
+                            <p>- Git & GitHub</p>
+                        </div>
+                        <div id="show-description" class="hidden">
+                            <h2 class="text-[#4E4FEB]">2011</h2>
+                            <p class="text-[1rem]"> - Phra Kuman Ubon School</p>
+                            <h2 class="text-[#4E4FEB]">2017</h2>
+                            <p class="text-[1rem]"> - Narinukul Ubon Ratchathani School</p>
+                            <h2 class="text-[#4E4FEB]">2021</h2>
+                            <p class="text-[1rem]"> - Khon Kaen University<br>( Industrial Engineering )</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container">
+                <h1 style="font-size: 2.75rem; margin-bottom: 2rem; padding: 0 15px;">My <span style="color:#4E4FEB;">Projects</span></h1>
+                <div class="grid grid-cols-[1fr_1.6fr] gap-[20px] px-[10px] mb-[30px] md:grid-cols-[1fr]">
+                    <div class="picture-projects">
+                        <div class="des-project">
+                            <a href="https://github.com/TanonchaiSrikawe/ECommerce-Project" target="_blank">+</a>
+                        </div>
+                    </div>
+                    <div class="text-project-1">
+                        <h3 class="text-[1.5rem] sm:text-[1.2rem]">E-Commerce Website Project</h3>
+                        <h3 class="text-[1.5rem] sm:text-[1.2rem]">(CRUD Application)</h3>
+                        <h4 class="text-[1.5rem] mt-[10px] sm:text-[1.2rem]">Project created by</h4>
+                        <p>- ReachJS</p>
+                        <p>- Node.js (Express.js)</p>
+                        <p>- MongoDB</p>
+                        <p>- Tailwind CSS</p>
+                        <h4 class="text-[1.5rem] mt-[10px] md:text-[1.2rem]">Source code :</h4>
+                        <a href="https://github.com/TanonchaiSrikawe/ECommerce-Project" target="_blank">https://github.com/TanonchaiSrikawe/ECommerce-Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+              <h1 class="text-[3rem] text-center mb-[2rem]">
+                Contact <span class="text-[#4E4FEB]">Me</span>
+              </h1>
+              <div class="flex justify-center items-center gap-[100px] flex-wrap">
+                <div class="flex-contact">
+                  <img class="w-[12rem] h-[12rem]" src="../img/Paomedia-small-N-Flat-Phone.512.png"/>
+                  <h2>BY PHONE</h2>
+                  <p>0994755944</p>
+                  <button onclick="copyPhoneNumber()" class="btn-copy">Copy Phone Number</button>
+                </div>
+                <div class="flex-contact">
+                  <img class="w-[12rem] h-[12rem]" src="../img/Papirus-Team-Papirus-Apps-Github.512.png"/>
+                  <h2>Github</h2>
+                  <div>
+                    <a href="https://github.com/TanonchaiSrikawe" target="_blank" class="sm:text-sm">https://github.com/TanonchaiSrikawe</a>
+                  </div>
+                  <button onclick="copyLinkGithub()" class="btn-copy">Copy GitHub</button>
+                </div>
+                <div class="flex-contact">
+                  <img class="w-[12rem] h-[12rem]" src="../img/Graphicloads-100-Flat-2-Email.256.png"/>
+                  <h2>E-Mail</h2>
+                  <p>tanonchaisr@kkumail.com</p>
+                  <button onclick="copyLinkEmail()" class="btn-copy">Copy E-Mail</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+            <!-- Footer -->
+        <footer class="mt-[100px]">
+            <div class="text-white py-[10px] flex justify-center md:text-[10px]">
+                Copyright 2023 © - Create by Tanonchai Srikawe
+            </div>
+        </footer>
+    </main>
+</div>
+
+    <!-- Main JS File -->
+    <script src="script.js"></script>
+</body>
+</html>
