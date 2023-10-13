@@ -12,7 +12,7 @@
 3.จากนั้นจะได้ terminal run คำสั่ง **Rebuilding...**
 ![image](https://github.com/TanonchaiSrikawe/MyPortfolio/assets/141351306/5202f41e-ed1b-4663-994b-1d81b3a1617a)
 
-4.กดคำสั่ง Go live และ Enjoy with my portfolio [**กรุณาติดตั้ง Live server ผ่าน Extensions ก่อนครับ**]
+4.กด Go live บริเวณข้างล่างของ terminal จากนั้นหน้าเว็ป myportfolio จะแสดงขึ้นมา [**กรุณาติดตั้ง Live server ผ่าน Extensions ก่อนครับ**]
 ![image](https://github.com/TanonchaiSrikawe/MyPortfolio/assets/141351306/6db88b50-b19b-4347-aa5c-76b0c0f1c789)
 ![image](https://github.com/TanonchaiSrikawe/MyPortfolio/assets/141351306/78bc52d3-039f-45fc-a3ed-a15542f261b6)
 
