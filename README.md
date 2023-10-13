@@ -15,4 +15,5 @@
 4.กด Go live บริเวณข้างล่างของ terminal จากนั้นหน้าเว็ป myportfolio จะแสดงขึ้นมา [**กรุณาติดตั้ง Live server ผ่าน Extensions ก่อนครับ**]
 ![image](https://github.com/TanonchaiSrikawe/MyPortfolio/assets/141351306/6db88b50-b19b-4347-aa5c-76b0c0f1c789)
 ![image](https://github.com/TanonchaiSrikawe/MyPortfolio/assets/141351306/78bc52d3-039f-45fc-a3ed-a15542f261b6)
+![image](https://github.com/TanonchaiSrikawe/MyPortfolio/assets/141351306/17886577-2cbd-4390-8570-d992ed3c8235)
 
